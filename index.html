@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Grand Hotel - Book Your Stay</title>
+    <meta name="description" content="Experience luxury at its finest. Book your stay at our 5-star hotel with world-class amenities and breathtaking rooms.">
+    <meta name="keywords" content="luxury hotel, 5-star accommodation, luxury rooms, hotel booking, premium amenities">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+   
+</head>
+<body class="min-h-screen bg-luxury-cream font-sans">
+    <header class="luxury-gradient text-white sticky top-0 z-50 shadow-xl">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center">
+                        <i class="fas fa-crown text-luxury-dark text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-serif font-bold">Grand<span class="text-gold-400">Lux</span>Hotel</h1>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#Home" class="hover:text-gold-400 transition-colors duration-300">Home</a>
+                    <a href="#Rooms & Suites" class="hover:text-gold-400 transition-colors duration-300">Rooms & Suites</a>
+                    <a href="#Amenities" class="hover:text-gold-400 transition-colors duration-300">Amenities</a>
+                    <a href="#Contac" class="hover:text-gold-400 transition-colors duration-300">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="bg-gold-500 hover:bg-gold-600 text-luxury-dark font-semibold px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105">
+                       <a href="#Book Now" >Book Now</a>
+                    </button>
+                    <button class="md:hidden text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Home" class="relative h-96 md:h-144 overflow-hidden">
+        <div class="absolute inset-0">
+            <img 
+                src="image.png" 
+                alt="Luxury hotel lobby with grand chandelier and marble floors" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+            />
+            <div class="absolute inset-0 luxury-gradient opacity-60"></div>
+        </div>
+        
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold text-white mb-4">
+                    Experience <span class="text-gold-400">Ultimate</span> Luxury
+                </h2>
+                <p class="text-xl text-gray-200 mb-8">
+                    Indulge in unparalleled comfort with our world-class amenities and breathtaking accommodations
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+
+                <section id="Rooms & Suites" class="mb-12">
+                    <h2 class="text-3xl font-serif font-bold text-luxury-dark mb-2">Select Your Luxury Room</h2>
+                    <p class="text-gray-600 mb-8">Choose from our exquisite collection of rooms and suites</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="rooms-container">
+
+                    </div>
+                </section>
+
+                <section id="Amenities" class="mb-12">
+                    <h2 class="text-3xl font-serif font-bold text-luxury-dark mb-8">Premium Hotel Amenities</h2>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="amenities-container">
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-3xl font-serif font-bold text-luxury-dark mb-8">Hotel Gallery</h2>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="col-span-2 row-span-2">
+                            <img 
+                                src="image2.png" 
+                                alt="Luxury hotel swimming pool with panoramic view" 
+                                class="w-full h-full object-cover rounded-xl room-image-hover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <img 
+                            src="image4.png" 
+                            alt="Fine dining restaurant interior" 
+                            class="w-full h-48 object-cover rounded-xl room-image-hover"
+                            loading="lazy"
+                        />
+                        <img 
+                            src="image3.png" 
+                            alt="Spa and wellness center" 
+                            class="w-full h-48 object-cover rounded-xl room-image-hover"
+                            loading="lazy"
+                        />
+                        <img 
+                            src="image6.png" 
+                            alt="Conference and event facilities" 
+                            class="w-full h-48 object-cover rounded-xl room-image-hover"
+                            loading="lazy"
+                        />
+                        <img 
+                            src="image5.png" 
+                            alt="Rooftop bar with city view" 
+                            class="w-full h-48 object-cover rounded-xl room-image-hover"
+                            loading="lazy"
+                        />
+                    </div>
+                </section>
+            </div>
+
+        
+            <div class="lg:col-span-1">
+                <div class="sticky top-24 bg-white rounded-2xl shadow-2xl p-6 border border-gold-200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 rounded-full gold-gradient flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calendar-alt text-luxury-dark text-2xl"></i>
+                        </div>
+                        <section id="Book Now"></section>
+                        <h3 class="text-2xl font-serif font-bold text-luxury-dark">Book Your Stay</h3>
+                        <p class="text-gray-600">Fill in your details to reserve luxury</p>
+                    </div>
+
+                    <form id="booking-form" class="space-y-6">
+                    
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Check-in</label>
+                                <input 
+                                    type="date" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                    id="checkin-date"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Check-out</label>
+                                <input 
+                                    type="date" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                    id="checkout-date"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Guests</label>
+                            <div class="flex items-center border border-gray-300 rounded-lg">
+                                <button type="button" class="px-4 py-3 text-gray-600 hover:text-gold-600" id="decrease-guests">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input 
+                                    type="number" 
+                                    class="w-full px-4 py-3 text-center border-0 form-input"
+                                    id="guests"
+                                    value="2"
+                                    min="1"
+                                    max="8"
+                                    readonly
+                                />
+                                <button type="button" class="px-4 py-3 text-gray-600 hover:text-gold-600" id="increase-guests">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Room Type</label>
+                            <select 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                id="room-type"
+                                required>
+                                
+                            </select>
+                        </div>
+
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                                <input 
+                                    type="text" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                    placeholder="Enter your full name"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                                <input 
+                                    type="email" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                    placeholder="your@email.com"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                    placeholder="+91"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Special Requests</label>
+                            <textarea 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-gold-500"
+                                rows="3"
+                                placeholder="Any special requirements or preferences..."
+                            ></textarea>
+                        </div>
+
+                        
+                        <div class="border-t border-gray-200 pt-4">
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-600">Room Price (per night)</span>
+                                <span class="font-semibold" id="room-price">0</span>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-600">Number of Nights</span>
+                                <span class="font-semibold" id="nights-count">0</span>
+                            </div>
+                            <div class="flex justify-between text-lg font-bold border-t border-gray-300 pt-2">
+                                <span>Total Amount</span>
+                                <span class="text-gold-600" id="total-amount">0</span>
+                            </div>
+                        </div>
+
+                        
+                        <button 
+                            type="submit" 
+                            class="w-full gold-gradient text-luxury-dark font-bold py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                            <i class="fas fa-lock mr-2"></i>Complete Booking
+                        </button>
+                        
+                        <p class="text-center text-sm text-gray-500 mt-4">
+                            <i class="fas fa-shield-alt mr-1"></i>Secure payment • Free cancellation up to 48 hours
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="luxury-gradient text-white py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full gold-gradient flex items-center justify-center">
+                            <i class="fas fa-crown text-luxury-dark text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold">Grand<span class="text-gold-400">Lux</span>Hotel</h3>
+                    </div>
+                    <p class="text-gray-300">Experience luxury redefined at our award-winning 5-star hotel with world-class service and amenities.</p>
+                </div>
+                
+                <div>
+                    <section id="Contac">
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <div class="space-y-2">
+                        <p><i class="fas fa-map-marker-alt text-gold-400 mr-2"></i>123 Luxury Avenue, Beverly Hills, CA</p>
+                        <p><i class="fas fa-phone text-gold-400 mr-2"></i>+91 9876543210</p>
+                        <p><i class="fas fa-envelope text-gold-400 mr-2"></i>reservations@grandluxhotel.com</p>
+                    </div>
+                    </section>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a class="hover:text-gold-400 transition-colors">Rooms & Suites</a></li>
+                        <li><a class="hover:text-gold-400 transition-colors">Dining Experience</a></li>
+                        <li><a class="hover:text-gold-400 transition-colors">Spa & Wellness</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gold-500 flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gold-500 flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gold-500 flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gold-500 flex items-center justify-center transition-colors">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400">© 2024 GrandLux Hotel. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

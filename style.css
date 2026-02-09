@@ -1,0 +1,24 @@
+
+        .room-image-hover {
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .room-image-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .amenity-icon {
+            transition: all 0.3s ease;
+        }
+        .amenity-icon:hover {
+            transform: scale(1.2);
+            color: #facc15;
+        }
+        .form-input:focus {
+            box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3);
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #0c0a09 0%, #292524 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #fef08a 0%, #facc15 50%, #ca8a04 100%);
+        }
